@@ -1,0 +1,8 @@
+---
+- name: use galaxy centos_security_updates role
+  hosts: all 
+  user: ansible
+  become: true
+
+  roles:
+    - role: memiah.centos_security_updates
